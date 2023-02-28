@@ -1,9 +1,10 @@
-import { Section, Profile, Statistic, Friends } from 'components';
+import { Section, Profile, Statistic, Friends, TransactionHistory } from 'components';
 import React from 'react';
 
 import user from 'db/user.json';
 import data from 'db/data.json';
 import friends from 'db/friends.json';
+import transaction from 'db/transactions.json';
 
 export const App: React.FC = () => {
   return (
@@ -22,6 +23,9 @@ export const App: React.FC = () => {
       </Section>
       <Section title="Friends">
         <Friends friends={friends} />
+      </Section>
+      <Section title="Transaction History">
+        <TransactionHistory transaction={transaction} />
       </Section>
     </main>
   );
