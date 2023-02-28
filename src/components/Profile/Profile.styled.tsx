@@ -4,7 +4,7 @@ export const ProfileCard = styled.div`
   width: 330px;
   margin: 0 auto;
   border-radius: 7px;
-  /* overflow: hidden; */
+  overflow: hidden;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   background-color: #f7f7f7;
