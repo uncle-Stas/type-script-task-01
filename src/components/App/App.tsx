@@ -1,11 +1,20 @@
+import { Section, Profile } from 'components';
 import React from 'react';
+
+import user from 'db/user.json';
 
 export const App: React.FC = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, dolores vero aliquam
-      mollitia voluptas nisi quisquam at animi itaque quis culpa nihil cum soluta eveniet maiores!
-      Blanditiis, corporis deserunt! Dignissimos!
-    </div>
+    <main>
+      <Section title="Profile">
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </Section>
+    </main>
   );
 };
